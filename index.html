@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <link rel ="stylesheet" href="./index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  
+    <title>heatmap</title>
+</head>
+<body>
+    <div background ="#010101" class="topdiv">
+     <form>
+         <select id ="indexSelector" name ="index" onchange="indexClicked()">
+             <option value ="">Select an Index</option>
+             <option value = "Engagement">Engagement</option>
+             <option value = "Manager Satisfaction">Manager Satisfaction</option>
+             <option value = "Job Satisfaction">Job Satisfaction</option>
+         </select>
+         <select id="topicSelector" name ="topic" onchange ="topicClicked()" disabled>
+            <option value ="">Select an Topic</option>
+        </select>
+     </form>
+     <br><br>
+      
+     <table id="scoretable">
+     </table>
+
+
+    </div>
+</body>
+ <script type ="text/javascript" src ="./index.js"></script>
+
+</html>
