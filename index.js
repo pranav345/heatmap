@@ -93,6 +93,10 @@ function topicClicked()
     {
         createtable(tsmap.get(val));
     }
+    else
+    {  
+        createtable(itmap.get($("#indexSelector").val()));
+    }
 }
 
 
